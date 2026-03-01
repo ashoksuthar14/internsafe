@@ -1,73 +1,135 @@
-# Welcome to your Lovable project
+# 🛡️ InternSafe 2.0 — AI-Powered Career Intelligence & Protection System
 
-## Project info
+InternSafe 2.0 is a multi-agent AI system that protects students from fraudulent job/internship listings, analyzes their fit for roles, and provides career strategy with negotiation coaching — all powered by 10 specialized AI agents running through the Groq API.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Built for **AMD Ryzen AI Slingshot 2026 Hackathon**.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Getting Started
 
-**Use Lovable**
+### Step 1: Login
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Use the following credentials to access the app:
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+Email    : user@gmail.com
+Password : test123
 ```
 
-**Edit a file directly in GitHub**
+### Step 2: Add Your Groq API Key
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+> ⚠️ **Do this first before running any analysis.**
 
-**Use GitHub Codespaces**
+1. After logging in, click on **Settings** in the sidebar.
+2. Paste your **Groq API Key** in the input field.
+3. Click **Save**.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Don't have a key? Get one for free at [console.groq.com](https://console.groq.com).
 
-## What technologies are used for this project?
+### Step 3: Start a New Analysis
 
-This project is built with:
+1. Click **New Analysis** from the sidebar or dashboard.
+2. **Paste the job/internship listing** text in the text area (or enter the listing URL).
+3. Click **Next**.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Step 4: Enter Your Profile
 
-## How can I deploy this project?
+1. **Paste your resume text** in the provided area.
+2. Add your **LinkedIn profile URL** (optional).
+3. Add your **GitHub profile URL** (optional).
+4. Click **Run Analysis**.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### Step 5: Watch the Agents Work
 
-## Can I connect a custom domain to my Lovable project?
+Sit back and watch 10 AI agents analyze the listing in real-time:
 
-Yes, you can!
+- **Shield Agents** — Check if the listing is a scam (company verification, recruiter check, red flag detection)
+- **Fit Agents** — Analyze how well your profile matches the role across 5 dimensions
+- **Leverage Agents** — Build your application strategy, cover letter, and negotiation scripts
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Step 6: View Your Intelligence Report
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Once all agents complete, you get a full report with:
+
+- **Safety Score** — Is this listing legit or a scam?
+- **Fit Score** — How well do you match this role?
+- **Skill Gap Roadmap** — What to learn and how long it'll take
+- **Application Strategy** — Resume improvements + tailored cover letter
+- **Negotiation Playbook** — Market salary data + ready-to-send counter-offer scripts
+
+You can **download the report as PDF** or access it anytime from **My Reports**.
+
+---
+
+## 🧠 How It Works
+
+```
+Job Listing + Resume + LinkedIn
+        │
+        ▼
+┌─── PILLAR 1: SHIELD ──────────────────────┐
+│  Listing Analyst → Company Investigator    │
+│  → Recruiter Verifier → Safety Gate        │
+└────────────────────────────────────────────┘
+        │ (If safe, continue ↓)
+        ▼
+┌─── PILLAR 2: FIT ─────────────────────────┐
+│  Profile Deep-Dive → Fit-Match Engine      │
+│  → Growth-Gap Analyzer                     │
+└────────────────────────────────────────────┘
+        │
+        ▼
+┌─── PILLAR 3: LEVERAGE ────────────────────┐
+│  Market Intelligence → App Strategist      │
+│  → Negotiation Coach                       │
+└────────────────────────────────────────────┘
+        │
+        ▼
+   📄 Intelligence Report
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React, TypeScript, Tailwind CSS, shadcn/ui |
+| LLM | Groq API (Llama 3.3 70B) |
+| Database | Supabase (PostgreSQL) |
+| Auth | Supabase Auth |
+| Deployment | Lovable |
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── landing/       → Hero, Features, Stats
+│   ├── analysis/      → Wizard, Agent cards, Execution view
+│   ├── report/        → Safety, Fit, Upskilling, Strategy sections
+│   └── layout/        → Sidebar, Header, Dashboard layout
+├── lib/
+│   ├── groq.ts        → Groq API client + agent prompts
+│   ├── agents.ts      → Agent execution pipeline
+│   └── supabase.ts    → Supabase client
+├── pages/             → All route pages
+└── hooks/             → Custom React hooks
+```
+
+---
+
+## 🏗️ Built For
+
+**AMD Ryzen AI Slingshot 2026**
+- Theme: AI in Consumer Experiences + AI + Cybersecurity & Privacy
+- Powered by Hack2Skill
+
+---
+
+## 📝 License
+
+This project was built for the AMD Slingshot Hackathon and is intended for educational and demonstration purposes.
