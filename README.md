@@ -1,8 +1,7 @@
-# 🛡️ InternSafe 2.0 — AI-Powered Career Intelligence & Protection System
+# 🛡️ InternSafe — AI-Powered Career Intelligence & Protection System
 
-InternSafe 2.0 is a multi-agent AI system that protects students from fraudulent job/internship listings, analyzes their fit for roles, and provides career strategy with negotiation coaching — all powered by 10 specialized AI agents running through the Groq API.
+InternSafe  is a multi-agent AI system that protects students from fraudulent job/internship listings, analyzes their fit for roles, and provides career strategy with negotiation coaching — all powered by 10 specialized AI agents running through the Groq API.
 
-Built for **AMD Ryzen AI Slingshot 2026 Hackathon**.
 
 ---
 
